@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Calculadora online</title>
+    <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/272/PNG/512/Calculator_30001.png">
+</head>
+<body>
+    <div class="Calculadora">     
+        <form name="CalculadoraOnline">
+            <input type="text" name="Display" id="Display">
+            <div>
+                <input type="button"  value="1" id="uno" onclick="valor(document.getElementById('uno').value)">
+                <input type="button"  value="2" id="dos" onclick="valor(document.getElementById('dos').value)">
+                <input type="button"  value="3" id="tres" onclick="valor(document.getElementById('tres').value)">
+                <input type="button"  value="+" id="suma" onclick="valor(document.getElementById('suma').value)">
+                
+            </div>
+            <div>
+                <input type="button"  value="4" id="cuatro" onclick="valor(document.getElementById('cuatro').value)">
+                <input type="button"  value="5" id="cinco" onclick="valor(document.getElementById('cinco').value)">
+                <input type="button"  value="6" id="seis" onclick="valor(document.getElementById('seis').value)">
+                <input type="button"  value="-" id="resta" onclick="valor(document.getElementById('resta').value)">
+            </div>
+            <div>
+                <input type="button"  value="7" id="siete" onclick="valor(document.getElementById('siete').value)">
+                <input type="button"  value="8" id="ocho" onclick="valor(document.getElementById('ocho').value)">
+                <input type="button"  value="9" id="nueve" onclick="valor(document.getElementById('nueve').value)">
+                <input type="button"  value="*" id="multiplicacion" onclick="valor(document.getElementById('multiplicacion').value)">
+            </div>
+            <div>
+                <input type="button"  value="0" id="cero" onclick="valor(document.getElementById('cero').value)">
+                <input type="button"  value="." id="punto" onclick="valor(document.getElementById('punto').value)">
+                <input type="button"  value="/" id="div" onclick="valor(document.getElementById('div').value)">
+                <input type="button"  value="%" id="por" onclick="valor(document.getElementById('por').value)">
+            </div>
+            <div class="resultado">
+                <input type="button" value="=" id="igual" onclick="cal_rel()">
+                <button type="button"  value="" id="borrar" onclick="borrarDisplay(document.getElementById('borrar').value)">Borrar</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="calc.js"></script>
+
+    <footer>
+        <p>
+            Proyecto Web con fines Educativos<br>
+            Diseñado:<a href="mailto:dinnysevilla10@gmail.com"> Danny Sevilla</a><br>
+            (c) Todos los derechos reservados - 2021            
+        </p>
+    </footer>
+</body>
+</html>
